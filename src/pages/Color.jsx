@@ -99,17 +99,10 @@ const SortableItem = SortableElement(
               readOnly
             />
           </div>
-          <button className=" bg-gray-400 px-2 " onClick={toggleDropdown}>
+          <button className="kzui-dropdown-button" onClick={toggleDropdown}>
             Edit
           </button>
           <div className="kzui-dropdown-container">
-            {/* <button
-              onClick={toggleDropdown}
-              className="kzui-dropdown-button"
-              aria-label={`Options for ${color.title}`}
-            >
-              <HiOutlineDotsHorizontal />
-            </button> */}
             {isDropdownOpen && (
               <ul className={`kzui-dropdown-menu show`}>
                 <li>
