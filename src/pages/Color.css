@@ -1,0 +1,423 @@
+.kzui-rename-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.kzui-rename-modal-content {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 33.33%;
+}
+
+.kzui-rename-modal-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.kzui-rename-modal-input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.kzui-rename-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.kzui-rename-modal-cancel {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.kzui-rename-modal-change {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.kzui-group-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.kzui-group-item:hover {
+  background-color: #e5e7eb;
+}
+
+.kzui-group-item-checkbox {
+  margin-right: 8px;
+}
+
+.kzui-group-item-title {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.kzui-group-item-title p {
+  font-weight: 600;
+}
+
+.kzui-group-item-color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  gap: 8px;
+}
+
+.kzui-color-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kzui-color-preview {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+}
+
+.kzui-color-input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px;
+  width: 100%;
+}
+
+.kzui-dropdown-container {
+  position: relative;
+}
+
+.kzui-dropdown-button {
+  background-color: white;
+  border-radius: 6px;
+  padding: 8px;
+  color: #4b5563;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.kzui-dropdown-button:hover {
+  background-color: #f3f4f6;
+}
+
+.kzui-dropdown-menu {
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 160px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.kzui-dropdown-menu.show {
+  opacity: 1;
+  display: block;
+}
+
+.kzui-dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.kzui-dropdown-item:hover {
+  background-color: #f3f4f6;
+}
+
+.kzui-dropdown-icon {
+  margin-right: 8px;
+}
+
+.kzui-create-group-button {
+  position: absolute;
+  inset-x: 0;
+  bottom: 6px;
+  width: 25%;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+.kzui-create-group-button p {
+  margin-right: 8px;
+}
+
+.kzui-create-group-button button {
+  background-color: #4b5563;
+  color: white;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.kzui-add-color-button {
+  margin-top: 16px;
+  color: #9ca3af;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.kzui-add-color-section {
+  margin-top: 16px;
+}
+
+.kzui-add-color-input {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.kzui-add-color-input input[type="text"] {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+  width: 50%;
+  margin-right: 8px;
+}
+
+.kzui-add-color-input input[type="color"] {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.kzui-add-color-input button {
+  background-color: #10b981;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-left: 8px;
+}
+
+.kzui-grouped-colors-section {
+  margin-top: 16px;
+  position: relative;
+}
+
+.kzui-grouped-colors-header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.kzui-grouped-colors-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.kzui-grouped-colors-dropdown {
+  position: absolute;
+  top: 0;
+  left: 112px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+  border-radius: 8px;
+  z-index: 10;
+  width: 160px;
+}
+
+.kzui-grouped-colors-dropdown ul {
+  padding: 8px 0;
+}
+
+.kzui-grouped-colors-dropdown li {
+  display: flex;
+  align-items: center;
+}
+
+.kzui-grouped-colors-dropdown button,
+.kzui-grouped-colors-dropdown a {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.kzui-grouped-colors-dropdown button:hover,
+.kzui-grouped-colors-dropdown a:hover {
+  background-color: #f3f4f6;
+}
+
+.kzui-grouped-color-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.kzui-grouped-color-item:hover {
+  background-color: #e5e7eb;
+}
+
+.kzui-grouped-color-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.kzui-grouped-color-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  gap: 8px;
+}
+
+.kzui-grouped-color {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+}
+
+.kzui-readonly-color-input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+}
+
+.kzui-color-options-button {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  color: #4b5563;
+  cursor: pointer;
+  border: none;
+}
+
+.kzui-color-options-button:hover {
+  background-color: #f3f4f6;
+}
+
+.kzui-editing-color-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 33.33%;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.kzui-editing-color-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.kzui-editing-color-input {
+  margin-bottom: 16px;
+}
+
+.kzui-editing-color-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.kzui-editing-color-input-field {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.kzui-editing-color-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.kzui-editing-color-input-half {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 50%;
+  padding: 8px;
+}
+
+.kzui-editing-color-input-half + .kzui-editing-color-input-half {
+  margin-left: 8px;
+}
+
+.kzui-editing-color-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.kzui-editing-color-save {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.kzui-editing-color-cancel {
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.kzui-drag-handle {
+  cursor: grab;
+}
+
+.kzui-group-item.dragging {
+  opacity: 0.5;
+}
